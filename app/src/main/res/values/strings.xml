@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Yahtzee</string>
+    <string name="ones_string">Ones</string>
+    <string name="twos_string">Twos</string>
+    <string name="threes_string">Threes</string>
+    <string name="fours_string">Fours</string>
+    <string name="fives_string">Fives</string>
+    <string name="sixes_string">Sixes</string>
+    <string name="bonus_string">Bonus</string>
+    <string name="three_cards_string">Three Cards</string>
+    <string name="four_cards_string">Four Cards</string>
+    <string name="mini_straight_string">Mini Straight</string>
+    <string name="large_straight_string">Large Straight</string>
+    <string name="yahtzee_string">Yahtzee!!</string>
+    <string name="chance_string">Chance</string>
+    <string name="full_house_string">Full House</string>
+    <string name="total_score_string">Total Score</string>
+    <string name="game_start_string">START!</string>
+    <string name="roll_button_string">ROLL!</string>
+    <string name="score_button_string">SCORE</string>
+    <string name="tap_to_save_string">Tap to Save</string>
+    <string name="result_string">Your Score is...</string>
+    <string name="title_button_string">Back To Title</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.example.yahtzee.ViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/round_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Round 1/13" />
+
+        <Button
+            android:id="@+id/button_roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dice_d"
+            app:layout_constraintVertical_bias="0.25"
+            tools:text="ROLL! 1/3" />
+
+        <Button
+            android:id="@+id/button_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_button_string"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_roll" />
+
+        <ImageView
+            android:id="@+id/dice_a"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/round_text"
+            app:srcCompat="@drawable/dice_one" />
+
+        <ImageView
+            android:id="@+id/dice_b"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/round_text"
+            app:srcCompat="@drawable/dice_one" />
+
+        <ImageView
+            android:id="@+id/dice_c"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dice_b"
+            app:srcCompat="@drawable/dice_one" />
+
+        <ImageView
+            android:id="@+id/dice_d"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dice_c"
+            app:srcCompat="@drawable/dice_one" />
+
+        <ImageView
+            android:id="@+id/dice_e"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dice_c"
+            app:srcCompat="@drawable/dice_one" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
